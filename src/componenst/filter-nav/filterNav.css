@@ -1,0 +1,30 @@
+.bottom-nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bottom-nav-row{
+    width: 60%;
+    height: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-evenly;
+}
+.bottom-nav-button{
+    width: 100%;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: 500;
+}
+.bottom-nav-button p{
+    margin-bottom: 10px;
+}
+.border-right{
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+.border-left{
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}

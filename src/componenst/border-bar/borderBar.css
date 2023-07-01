@@ -1,0 +1,28 @@
+.border-bar{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(229, 9, 20, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar-button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: rgba(229, 9, 20, 1);
+}
+.indicator-box button{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: rgba(229, 9, 20, 1);
+    color: #FFFFFF;
+    border: none;
+    margin-left: 10px;
+}

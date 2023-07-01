@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.d-f{
+    display: flex;
+}
+.m-l{
+    margin-left: 5px;
+}
+.dashboard{
+    width: 100%;
+    height: 100vh;
+    /*background-color: red;*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+.d-container{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.d-b{
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.full-width{
+    width: 100%;
+}
+.m-auto{
+    margin: auto;
+}
+.y-center{
+    display: flex;
+    align-items: center;
+}
+
+.more{
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: rgba(229, 9, 20, 1);
+    display: block;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+.more i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.email-box{
+    width: 30%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px 60px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    margin: 60px auto;
+}
+.email-box d-f{
+    width: 100%;
+}
+.email-box input{
+    padding-left: 20px;
+    display: block;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 50px;
+    width: 100%;
+}
+.email-box button{
+    padding: 0px 20px;
+    display: block;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(229, 9, 20, 1);
+    color: #FFFFFF;
+    height: 50px;
+}
+.email-box p{
+    margin: 0px 30px;
+}
+.footer{
+    background-color: rgba(29, 29, 29, 1);
+    padding: 40px 0px;
+}
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-one{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logotip{
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.footer-p{
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.footer-end{
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+}
+.circle-button{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(229, 9, 20, 1);
+    border-radius: 50%;
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-size: 18px;
+    border: none;
+}
+.downloading{
+    width: 150px;
+    height: 48px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(229, 9, 20, 1);
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: 400;
+    display: block;
+    margin-top: 20px;
+}
+.download-box{
+    display: flex;
+    justify-content: end;
+}
+
+.footer-icon{
+    font-size: 27px;
+}
+
+.footer-p2{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(229, 9, 20, 1);
+    margin-bottom: 10px;
+}
+
+.footer-one-child{
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+
+
+/* tugadi/// endi esa header*/
+
+
+.news-box{
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.news-list{
+    margin-top: 20px;
+}
+.news-list-img{
+    width: 30%;
+    height: auto;
+}
+
