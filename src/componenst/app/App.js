@@ -338,7 +338,7 @@ const data = [
         title: "Buxoroda ekstremistik g‘oyalarni targ‘ib qilgan shax...",
         discription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolorum magni neque nulla tenetur. Doloremque iure rem suscipit. Iusto, repudiandae.",
         type: "jamiyat",
-        grade: "tezkor",
+        grade: "eng",
         date: "20 May, 2022",
         views: 735
     },
@@ -394,6 +394,10 @@ const iqtisod = data.filter(item => item.type == "iqtisodiyot");
 const jamiyat = data.filter(item => item.type == "jamiyat");
 const texno = data.filter(item => item.type == "texno");
 const sport = data.filter(item => item.type == "sport");
+const olovli = data.filter(item => item.grade == "olovli");
+const eng = data.filter(item => item.grade == "eng");
+const tezkor = data.filter(item => item.grade == "tezkor");
+const most = data.filter(item => item.views >= 900);
 
 
 function App() {
@@ -402,6 +406,7 @@ function App() {
       <div className="dashboard">
           <Router>
               <Nav />
+              <FilterNav/>
               <Routes>
                   <Route path="/" exact element={<HomePage homeData={homeData} shortSportData={shortSportData} shortTexnoData={shortTexnoData} homeData2={homedata2}/>}/>
                   <Route path="/iqtisod" element={<FlexPage word={"Iqtisod"} data={iqtisod}/>}/>
@@ -409,11 +414,14 @@ function App() {
                   <Route path="/texno" element={<FlexPage word={"Texnologiya"} data={texno}/>}/>
                   <Route path="/sport" element={<FlexPage word={"Sport"} data={sport}/>}/>
                   <Route path="*" element={<ErrorPage/>}/>
+                  <Route path="/olovli" element={<FlexPage word={"Olovli yangiliklar"} icon={"bi bi-fire"} data={olovli} />}/>
+                  <Route path="/eng" element={<FlexPage word={"Eng mashhur"} icon={"bi bi-heart-fill"} data={eng} />}/>
+                  <Route path="/trend" element={<FlexPage word={"Trend yangiliklar"} icon={"bi bi-lightning-fill"} data={tezkor} />}/>
+                  <Route path="/views" element={<FlexPage word={"Eng ko'p tomosha qilingan"} icon={"bi bi-eye-fill"} data={most} />}/>
               </Routes>
 
               <Footer />
           </Router>
-
       </div>
   );
 }

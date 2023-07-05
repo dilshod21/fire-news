@@ -1,13 +1,12 @@
 import BorderBar from "../border-bar/BorderBar";
 import VideoCardRow from "../video-card-row/VideoCardRow";
 import NewsList from "../news-list/NewsList";
-import FilterNav from "../filter-nav/FilterNav";
 import Header from "../header/Header";
 
 function HomePage({homeData, shortSportData, shortTexnoData, homeData2}) {
     return (
         <div className="d-container">
-            <FilterNav />
+
 
             <Header />
             <BorderBar word={"So'ngi yangiliklar"} />
