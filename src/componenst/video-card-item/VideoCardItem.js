@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
 import './videoCardItem.css';
 
-function VideoCardItem({ id, img, title, date, type, grade, views }) {
+function VideoCardItem({ id, img, title, date, type, grade, views, }) {
     return (
-        <div className="video-card" key={id}>
+        <Link className="video-card" to={`/${id}`} key={id}>
             <div className="card-body">
                 <div className="card-img">
                     <img src={img} alt="" className="full-width"/>
@@ -29,7 +30,7 @@ function VideoCardItem({ id, img, title, date, type, grade, views }) {
                 </div>
             </div>
 
-        </div>
+        </Link>
     );
 }
 

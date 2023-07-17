@@ -1,7 +1,6 @@
-import React from 'react';
 import VideoCardItem from "../video-card-item/VideoCardItem";
 
-function VideoCardRow({ data }) {
+function VideoCardRow({ data, }) {
     return (
         <div className="row">
             {

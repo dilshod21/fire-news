@@ -1,4 +1,6 @@
 .video-card{
+    text-decoration: none;
+    display: block;
     width: 25%;
     height: auto;
     box-sizing: border-box;

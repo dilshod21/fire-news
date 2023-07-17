@@ -1,7 +1,7 @@
-import React from 'react';
+import {Link} from 'react-router-dom';
 import logo from "../../imgs/logo.png";
 
-function Footer(props) {
+function Footer() {
     return (
         <>
             <button className="more">
@@ -22,7 +22,7 @@ function Footer(props) {
                 </div>
             </div>
 
-            <div className="footer">
+            <div className="footer mt-5">
                 <div className="d-container">
                     <div className="footer-row">
                         <div className="footer-one">
@@ -60,9 +60,9 @@ function Footer(props) {
 
                             <div className="footer-one-child">
                                 <br/><br/>
-                                <p className="footer-p2">
+                                <Link to="/aloqa" className="footer-p2">
                                     Aloqa
-                                </p>
+                                </Link>
                                 <p className="footer-p">
                                     Reklama
                                 </p>

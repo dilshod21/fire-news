@@ -1,8 +1,9 @@
+import {Link} from 'react-router-dom';
 import './newsListItem.css';
 
 function NewsListItem({ id, img, title, date, views, }) {
     return (
-        <div className="news-list full-width d-f" key={id}>
+        <Link to={`/${id}`} className="news-list full-width d-f" key={id}>
             <img src={img} alt="" className="news-list-img"/>
             <div className="news-text">
                 <p className="title">{title}</p>
@@ -25,7 +26,7 @@ function NewsListItem({ id, img, title, date, views, }) {
                     </p>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }
 

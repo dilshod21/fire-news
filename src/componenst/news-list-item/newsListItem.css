@@ -1,4 +1,7 @@
 .news-list{
+    text-decoration: none;
+    display: block;
+    display: flex;
     margin-top: 30px;
 }
 .news-text{
@@ -9,6 +12,7 @@
 }
 .title{
     margin-top: 10px;
+    color: black;
 }
 .grades{
     display: flex;

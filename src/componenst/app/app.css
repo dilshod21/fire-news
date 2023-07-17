@@ -189,4 +189,6 @@
     width: 30%;
     height: auto;
 }
-
+.d-b{
+    display: block;
+}

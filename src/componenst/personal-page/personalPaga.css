@@ -1,0 +1,28 @@
+.personal-body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-box{
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px 0px 0px 20px;
+}
+.right-box{
+    width: 40%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    overflow-y: auto;
+    margin: 20px 0px;
+}
+.video-title{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+.video-discription{
+    font-size: 16px;
+    color: gray;
+}

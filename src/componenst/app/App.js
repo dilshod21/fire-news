@@ -1,5 +1,5 @@
 import './app.css';
-import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate, } from 'react-router-dom';
 import img1 from '../../imgs/img1.png';
 import img2 from '../../imgs/img2.png';
 import img3 from '../../imgs/img3.png';
@@ -46,6 +46,9 @@ import HomePage from "../home-page/HomePage";
 import Footer from "../footer/Footer";
 import ErrorPage from "../error-page/ErrorPage";
 import FlexPage from "../flex-page/FlexPage";
+import PersonalPage from "../personal-page/PersonalPage";
+import Form from '../form/Form';
+import {useState} from "react";
 
 
 
@@ -400,15 +403,16 @@ const tezkor = data.filter(item => item.grade == "tezkor");
 const most = data.filter(item => item.views >= 900);
 
 
+
 function App() {
 
   return (
       <div className="dashboard">
           <Router>
               <Nav />
-              <FilterNav/>
+              {/*<FilterNav/>*/}
               <Routes>
-                  <Route path="/" exact element={<HomePage homeData={homeData} shortSportData={shortSportData} shortTexnoData={shortTexnoData} homeData2={homedata2}/>}/>
+                  <Route path="/" exact element={<HomePage homeData={homeData} shortSportData={shortSportData} shortTexnoData={shortTexnoData} homeData2={homedata2} />}/>
                   <Route path="/iqtisod" element={<FlexPage word={"Iqtisod"} data={iqtisod}/>}/>
                   <Route path="/jamiyat" element={<FlexPage word={"Jamiyat"} data={jamiyat}/>}/>
                   <Route path="/texno" element={<FlexPage word={"Texnologiya"} data={texno}/>}/>
@@ -418,9 +422,9 @@ function App() {
                   <Route path="/eng" element={<FlexPage word={"Eng mashhur"} icon={"bi bi-heart-fill"} data={eng} />}/>
                   <Route path="/trend" element={<FlexPage word={"Trend yangiliklar"} icon={"bi bi-lightning-fill"} data={tezkor} />}/>
                   <Route path="/views" element={<FlexPage word={"Eng ko'p tomosha qilingan"} icon={"bi bi-eye-fill"} data={most} />}/>
+                  {data.map(item => (<Route path={`/${item.id}`} element={<PersonalPage id={item.id} img={item.img} type={item.type} title={item.title} discription={item.discription} data={data}/>} />))}
+                  <Route path="/aloqa" element={<Form/>}/>
               </Routes>
-
-              <Footer />
           </Router>
       </div>
   );
